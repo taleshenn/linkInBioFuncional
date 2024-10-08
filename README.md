@@ -29,14 +29,13 @@ O design é minimalista e moderno, com uma paleta de cores escura e fontes de f�
 
 1. **Acesse e depois me diga o que achou**
 
-Acessar o [Deploy](https://link-in-bio-two-themes.vercel.app/)
+Acessar o [Deploy](https://links-taleshenn.vercel.app/)
 
 2. **Clone o Repositório**
    Faça um clone do repositório para sua máquina local. Você pode usar o comando Git:
    ```bash
-   git clone https://github.com/taleshenn/linkInBioTwoThemes.git
+   git clone https://github.com/taleshenn/linkInBioFuncional.git
    ```
-
 
 ## Resumo do Código HTML
 
