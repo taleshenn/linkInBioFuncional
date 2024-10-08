@@ -1,0 +1,147 @@
+/*=============== RESET CSS ===============*/
+@import "/css/reset.css";
+
+/*=============== IMPORTAÇÃO DE OUTROS ESTILOS ===============*/
+@import "/css/styles.css";
+@import "/css/contact-whatsapp.css";
+
+/*=============== FONTES DO GOOGLE ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/*=============== Fonte Padrão ===============*/
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--cor-cinza-claro);
+  background: var(--imagem-background) no-repeat top center/cover;
+  color: var(--cor-texto);
+}
+
+/*========== container da página ==========*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.section-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+/*========== Tipografia ==========*/
+h1 {
+  font-size: var(--fonte-tamanho-grande);
+  font-weight: var(--fonte-peso-bold);
+}
+
+h2 {
+  font-size: var(--fonte-tamanho-medio);
+  font-weight: var(--fonte-peso-bold);
+}
+
+h3 {
+  font-size: var(--fonte-tamanho-normal);
+  font-weight: var(--fonte-peso-bold);
+}
+
+p {
+  p {
+    color: var(--cor-primaria);
+    line-height: 1.5rem;
+  }
+}
+
+.destaque {
+  color: var(--cor-complementar);
+}
+
+/*========== TRANSIÇÃO GLOBAL ==========*/
+.transition-all {
+  transition: all var(--transition-duracao) var(--transition-curva);
+  -webkit-transition: all var(--transition-duracao) var(--transition-curva);
+  -moz-transition: all var(--transition-duracao) var(--transition-curva);
+  -ms-transition: all var(--transition-duracao) var(--transition-curva);
+}
+
+/*=============== VARIÁVEIS GLOBAIS CSS ===============*/
+:root {
+  /*========== Pontos de quebra ==========*/
+  --desktop-width: 80rem;
+  --tablet-width: 64rem;
+  --mobile-width: 16rem;
+
+  /*========== Fonte ==========*/
+  /* 0.5rem = 8px | 1rem = 16px  */
+  --fonte-primaria: "Inter", sans-serif;
+  --fonte-tamanho-grande: 2rem;
+  --fonte-tamanho-medio: 1.5rem;
+  --fonte-tamanho-normal: 1rem;
+  --fonte-tamanho-pequeno: 0.5rem;
+
+  /*========== Peso da Fonte ==========*/
+  --fonte-peso-fina: 100;
+  --fonte-peso-normal: 400;
+  --fonte-peso-media: 600;
+  --fonte-peso-bold: 700;
+
+  /*========== Cores ==========*/
+  /* Modo de cor HSL (matiz, saturação, luminosidade)*/
+  --cor-primaria: hsl(90, 31%, 15%);
+  --cor-primaria-media: hsl(69, 7%, 37%);
+  --cor-primaria-clara: hsl(93, 14%, 84%);
+  --cor-complementar: hsl(45, 100%, 50%);
+  --cor-branco: hsl(0, 0%, 100%);
+  --cor-preto: hsl(0, 0%, 0%);
+  --cor-cinza-claro: hsl(0, 0%, 95%);
+
+  /* --imagem-background: url(../assets/bg-mobile.jpg); */
+  --imagem-background: radial-gradient(
+    60% 30% at 50% 70%,
+    var(--cor-primaria-media) 0%,
+    var(--cor-primaria) 100%
+  );
+  --imagem-avatar: url(../assets/avatar.png);
+  --imagem-switch: url(../assets/moon-stars.svg);
+
+  --cor-texto: var(--cor-branco);
+  --cor-texto-links: var(--cor-complementar);
+  --cor-destaque: var(--cor-complementar);
+  --cor-fundo-links: rgb(255, 225, 255, 0.05);
+  --cor-fundo-links-hover: rgba(255, 200, 0, 0.02);
+  --cor-contornos: rgba(255, 255, 255, 0.5);
+  --cor-contornos-links: rgba(255, 255, 255, 0.3);
+  --cor-contornos-hover: rgb(255, 200, 0, 0.3);
+  --cor-icones-dark: rgb(124, 124, 182);
+  --cor-icones: var(--cor-icones-dark);
+}
+
+.light {
+  /* --imagem-background: url(../assets/bg-mobile-light.jpg); */
+  --imagem-background: radial-gradient(
+    60% 30% at 50% 80%,
+    var(--cor-primaria-media) 0%,
+    var(--cor-primaria-clara) 100%
+  );
+  --imagem-avatar: url(../assets/avatar-light.png);
+  --imagem-switch: url(../assets/sun.svg);
+
+  --cor-texto: var(--cor-primaria);
+  --cor-texto-links: var(--cor-complementar);
+  --cor-texto-links-hover: rgb(63, 53, 8);
+  --cor-texto-links-footer-hover: rgb(84, 70, 6);
+  --cor-destaque: var(--cor-primaria);
+  --cor-fundo-links: rgba(155, 100, 0, 0.1);
+  --cor-fundo-links-hover: rgba(215, 185, 124, 0.5);
+  --cor-contornos: rgba(0, 0, 0, 0.3);
+  --cor-contornos-links: rgba(0, 0, 0, 0.2);
+  --cor-contornos-hover: rgb(0, 0, 0, 0.5);
+  --cor-icones-light: var(--cor-complementar);
+  --cor-icones: var(--cor-icones-light);
+
+  /*========== PARÂMETROS DA TRANSIÇÃO GLOBAL ==========*/
+  --transition-duracao: 0.3s;
+  --transition-curva: ease-in-out;
+}
