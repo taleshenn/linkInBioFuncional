@@ -18,21 +18,27 @@
         <div
           id="avatar"
           onclick="trocaAvatar()"
-          aria-label="Foto de Tales Henn, usando óculos barba e roupa preta."
+          aria-label="Foto de perfil de Tales Henn, usando óculos, barba e roupa preta."
         ></div>
         <h1>Tales Henn</h1>
         <p>Design<span>Web</span>Foto</p>
         <div id="switch" onclick="trocaTema(),trocaAvatar()">
-          <button></button>
-          <span></span>
+          <button aria-label="Botão para alternar tema"></button>
+          <span aria-label="Indicador de tema"></span>
         </div>
         <div id="socialLinks">
           <a href="https://www.behance.net/taleshenn" target="_blank"
-            ><ion-icon name="logo-behance"></ion-icon
+            ><ion-icon
+              name="logo-behance"
+              aria-label="Ícone do Behance"
+            ></ion-icon
           ></a>
 
           <a href="mailto:contato@taleshenn.com.br" target="_blank"
-            ><ion-icon name="mail-outline"></ion-icon
+            ><ion-icon
+              name="mail-outline"
+              aria-label="Ícone de e-mail"
+            ></ion-icon
           ></a>
         </div>
         <hr class="divisor" />
@@ -57,15 +63,6 @@
           </li>
         </ul>
       </nav>
-      <div id="socialLinks">
-        <a href="https://www.behance.net/taleshenn" target="_blank"
-          ><ion-icon name="logo-behance"></ion-icon
-        ></a>
-
-        <a href="mailto:contato@taleshenn.com.br" target="_blank"
-          ><ion-icon name="mail-outline"></ion-icon
-        ></a>
-      </div>
     </div>
     <section class="contact__whatsapp-cta">
       <div class="contact__whatsapp-wrapper">
@@ -78,6 +75,11 @@
         >
           Mandar mensagem
         </button>
+        <img
+          src="/assets/qr-whatsapp.png"
+          aria-label="Código QR para mensagem direta no aplicativo WhatsApp"
+          alt="Código QR WhatsApp"
+        />
       </div>
     </section>
     <script

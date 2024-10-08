@@ -24,6 +24,10 @@
   color: var(--cor-branco);
   line-height: 1.5rem;
 }
+.contact__whatsapp-wrapper > img {
+  max-width: calc(var(--mobile-width) * 0.75);
+  height: auto;
+}
 
 .contact__whatsapp-cta h2 {
   color: hsl(150, 90%, 40%);
